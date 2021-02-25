@@ -216,17 +216,17 @@
 # '4' -> 2
 # """
 
-st = input('Введіть текст: ')
-d = dict()
-
-for i in st:
-    if d.get(i) is None:
-        d[i] = 1
-    else:
-        d[i] += 1
-
-for k, v in d.items():
-    print(f'\'{k}\' => {v}')
+# st = input('Введіть текст: ')
+# d = dict()
+#
+# for i in st:
+#     if d.get(i) is None:
+#         d[i] = 1
+#     else:
+#         d[i] += 1
+#
+# for k, v in d.items():
+#     print(f'\'{k}\' => {v}')
 
 # =============================================
 # list comprehension
@@ -236,7 +236,15 @@ for k, v in d.items():
 # создать новый лист и записать в него 'GT' если элемент в numbers больше 4 и 'LT' если элемент меньше или равен 4
 # пример:
 # ['LT', 'LT', 'LT', 'LT', 'GT', 'GT', 'GT', 'GT']
-#
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+
+# newList = [str(i).replace(str(i), 'LT') if i <= 4
+#            else str(i).replace(str(i), 'GT')
+#            for i in numbers]
+# print(newList)
+
+
+# =============================================
 # 2) есть два листа:
 # list1 = [1, 2, 3, 4, 5]
 # list2 = [-1, 7, 10, -5, -2]
@@ -244,3 +252,6 @@ for k, v in d.items():
 # записать в лист тюплы (x,y) если x+y == 0
 # пример:
 # [(1, -1), (2, -2), (5, -5)]
+
+# list3 = [(i, j) for i in list1 for j in list2 if i + j == 0]
+# print(list3)
