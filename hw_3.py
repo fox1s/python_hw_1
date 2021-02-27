@@ -22,6 +22,7 @@ class Prince(Human):
                 return f'{self.name} і {cinderella["name"]} гойра весіллє '
 
 
+
 class Cinderella(Human):
     def __init__(self, name, age, foot):
         super().__init__(name, age)
