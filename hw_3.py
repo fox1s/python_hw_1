@@ -22,7 +22,6 @@ class Prince(Human):
                 return f'{self.name} і {cinderella["name"]} гойра весіллє '
 
 
-
 class Cinderella(Human):
     def __init__(self, name, age, foot):
         super().__init__(name, age)
@@ -43,6 +42,7 @@ rostyslav = Prince('Rostyslav', 20, 36)
 love_story = Prince.is_shoe_fits(rostyslav, list_of_cinderellas)
 print(love_story)
 
+
 # =================================================================
 # 2)
 # Создать класс Rectangle:
@@ -54,3 +54,11 @@ print(love_story)
 #   != не равны
 #   >, < меньше или больше
 #   при вызове метода len() подсчитывать сумму сторон
+
+class Rectangle:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        return self.P + other.P
